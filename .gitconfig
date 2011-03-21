@@ -22,6 +22,7 @@
 	rl = reflog show --decorate
 	sb = show-branch
 	rb = rebase -i
+	hub = push -u origin common
 [color]
 	branch = auto
 	diff = auto
