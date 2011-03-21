@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<gconf>
+	<entry name="button_layout" mtime="1300716323" type="string">
+		<stringvalue>close,minimize,maximize:</stringvalue>
+	</entry>
+	<entry name="theme" mtime="1300716402" type="string">
+		<stringvalue>Ambiance</stringvalue>
+	</entry>
+	<entry name="focus_mode" mtime="1300571039" type="string">
+		<stringvalue>sloppy</stringvalue>
+	</entry>
+	<entry name="num_workspaces" mtime="1299789165" type="int" value="9"/>
+</gconf>
