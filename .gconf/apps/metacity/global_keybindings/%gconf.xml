@@ -1,5 +1,8 @@
 <?xml version="1.0"?>
 <gconf>
+	<entry name="run_command_11" mtime="1300783632" type="string">
+		<stringvalue>&lt;Alt&gt;t</stringvalue>
+	</entry>
 	<entry name="switch_to_workspace_up" mtime="1300716216" type="string">
 		<stringvalue>&lt;Alt&gt;z</stringvalue>
 	</entry>

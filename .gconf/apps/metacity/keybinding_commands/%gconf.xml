@@ -1,5 +1,8 @@
 <?xml version="1.0"?>
 <gconf>
+	<entry name="command_11" mtime="1300783640" type="string">
+		<stringvalue>thunderbird</stringvalue>
+	</entry>
 	<entry name="command_10" mtime="1300724734" type="string">
 		<stringvalue>nautilus</stringvalue>
 	</entry>
