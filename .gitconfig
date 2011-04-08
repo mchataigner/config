@@ -28,8 +28,3 @@
 	diff = auto
 	status = auto
 	ui = auto
-[giggle]
-	main-window-maximized = true
-	main-window-geometry = 0x0+0+0
-	main-window-view = FileView
-	file-view-vpane-position = 236
