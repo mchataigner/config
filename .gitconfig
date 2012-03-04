@@ -28,3 +28,6 @@
 	diff = auto
 	status = auto
 	ui = auto
+
+[core]
+	autocrlf = true
