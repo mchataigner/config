@@ -23,6 +23,8 @@
 	sb = show-branch
 	rb = rebase -i
 	hub = push -u origin common
+	ign = ls-files -o -i --exclude-standard
+
 [color]
 	branch = auto
 	diff = auto
