@@ -3,7 +3,7 @@
 
 cd ~
 #$HOME
-mkdir ~/usr
+mkdir -p ~/usr
 cd ~/usr
 rm -rf \
 cope \
