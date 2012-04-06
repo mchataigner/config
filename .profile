@@ -23,6 +23,6 @@ fi
 
 if [ -d "$HOME/.bash" ];then
     for i in $(ls "$HOME/.bash");do
-	source "$HOME/.bash/$i"
+	. "$HOME/.bash/$i"
     done
 fi
