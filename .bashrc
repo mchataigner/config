@@ -133,3 +133,8 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+if [ -d "$HOME/.bash" ];then
+    for i in $(ls "$HOME/.bash");do
+	source "$HOME/.bash/$i"
+    done
+fi

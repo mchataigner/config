@@ -21,8 +21,8 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-if [ -d .bash ];then
-    for i in $(ls .bash);do
-	source ~/.bash/$i
+if [ -d "$HOME/.bash" ];then
+    for i in $(ls "$HOME/.bash");do
+	source "$HOME/.bash/$i"
     done
 fi
