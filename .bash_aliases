@@ -1,5 +1,5 @@
 alias a="xdg-open"
-export PATH=$HOME/bin/:/usr/local/share/perl/5.12.4/auto/share/dist/Cope/:$PATH:/home/moot/Documents/install/matlab2/bin/
+export PATH=$HOME/bin/:/usr/local/share/perl/5.12.4/auto/share/dist/Cope:$PATH:/home/moot/Documents/install/matlab2/bin/
 # Less Colors for Man Pages
 export LESS_TERMCAP_mb=$'\E[0;05;31m'       # begin blinking
 export LESS_TERMCAP_md=$'\E[01;34m'  # begin bold
