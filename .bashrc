@@ -55,11 +55,32 @@ fi
 #    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 #fi
 
+_git_status()
+{
+  # check if we're in a git repository
+  if git rev-parse 2> /dev/null; then
+    # show if there are changes pending
+    if current_git_status=$(git status --porcelain | grep '^ [MD]' 2> /dev/null > /dev/null); then
+      PENDING="y"
+    fi
+    # show if changes have been 'added' for commit
+    if current_git_status=$(git status --porcelain | grep '^[MADRC]' 2> /dev/null > /dev/null); then
+      STAGED="y"
+    fi
+    if [ "$PENDING" = "y" ] && [ "$STAGED" = "y" ]; then
+        echo -n "◈"
+    elif [ "$PENDING" = "y" ]; then
+        echo -n "◇"
+    elif [ "$STAGED" = "y" ]; then
+        echo -n "◆"
+    fi
+  fi
+}
 
 if [ $(id -u) -eq 0 ]; then
-    PS1="\[\033[01;31m\]\u\[\033[01;32m\]@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;33m\]\$(__git_ps1)\[\033[01;31m\]#\[\033[00m\] "
+    PS1='\[\033[01;31m\]\u\[\033[01;32m\]@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;33m\]$(__git_ps1  " (%s\[$(tput setaf 2)\]$(_git_status)\[\033[01;33m\])")\[\033[01;31m\]\#\[\033[00m\] '
 else
-    PS1="\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;33m\]\$(__git_ps1)\[\033[01;32m\]\[\033[00m\]$ "
+    PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[01;33m\]$(__git_ps1 " (%s\[$(tput setaf 2)\]$(_git_status)\[\033[01;33m\])")\[\033[01;32m\]\$\[\033[00m\] '
 fi
 
 unset color_prompt force_color_prompt
