@@ -134,5 +134,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
 fi
 
 if [ -d .bash ];then
-    for i in $(ls .bash);do source .bash/$i;done
+    for i in $(ls .bash);do
+	source ~/.bash/$i
+    done
 fi
