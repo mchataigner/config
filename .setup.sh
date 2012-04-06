@@ -14,5 +14,6 @@ bash setup.sh
 cd ../dfc
 bash setup.sh
 
-cd ..
+cd ~
+chown $USER:$USER -R usr
 
