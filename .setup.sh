@@ -10,14 +10,18 @@ cope \
 dfc \
 
 
-git clone https://mootcube@github.com/mootcube/cope.git
-git clone https://mootcube@github.com/mootcube/dfc.git
+git_repos=$(cat .git_repositories)
 
-cd cope
-bash setup.sh
+for i in $git_repos;do
+    git clone https://mootcube@github.com/mootcube/$i.git
+done
 
-cd ../dfc
-bash setup.sh
+
+#cd cope
+#bash setup.sh
+
+#cd ../dfc
+#bash setup.sh
 
 cd ~
 chown $USER:$USER -R usr
