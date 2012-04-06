@@ -5,14 +5,12 @@ cd ~
 #$HOME
 mkdir -p ~/usr
 cd ~/usr
-rm -rf \
-cope \
-dfc \
 
 
-git_repos=$(cat .git_repositories)
+git_repos=$(cat ~/.git_repositories)
 
 for i in $git_repos;do
+    rm -rf ~/usr/$i
     git clone https://mootcube@github.com/mootcube/$i.git
 done
 
