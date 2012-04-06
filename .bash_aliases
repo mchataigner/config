@@ -1,4 +1,5 @@
 alias a="xdg-open"
+alias sudo='sudo env PATH=$PATH'
 export PATH=$HOME/bin/:$PATH:/home/moot/Documents/install/matlab2/bin/
 # Less Colors for Man Pages
 export LESS_TERMCAP_mb=$'\E[0;05;31m'       # begin blinking

@@ -13,8 +13,8 @@ HISTCONTROL=ignoredups:ignorespace
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=10000
-HISTFILESIZE=200000
+HISTSIZE=1000000
+HISTFILESIZE=2000000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -133,8 +133,8 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-if [ -d "$HOME/.bash" ];then
-    for i in $(ls "$HOME/.bash");do
-	. "$HOME/.bash/$i"
+if [ -d ~/.bash ];then
+    for i in $(ls ~/.bash);do
+	. ~/.bash/$i
     done
 fi

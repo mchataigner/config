@@ -20,9 +20,3 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
-
-if [ -d "$HOME/.bash" ];then
-    for i in $(ls "$HOME/.bash");do
-	. "$HOME/.bash/$i"
-    done
-fi
