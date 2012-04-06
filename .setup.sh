@@ -5,6 +5,11 @@ cd ~
 #$HOME
 mkdir ~/usr
 cd ~/usr
+rm -rf \
+cope \
+dfc \
+
+
 git clone https://mootcube@github.com/mootcube/cope.git
 git clone https://mootcube@github.com/mootcube/dfc.git
 
