@@ -10,8 +10,13 @@ cd ~/usr
 git_repos=$(cat ~/.git_repositories)
 
 for i in $git_repos;do
-    rm -rf ~/usr/$i
-    git clone https://mootcube@github.com/mootcube/$i.git
+    if [ ! -d $i ];then
+	git clone https://mootcube@github.com/mootcube/$i.git
+    else
+	cd $i
+	git pull
+	cd -
+    fi
 done
 
 
