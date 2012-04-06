@@ -20,3 +20,9 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+
+if [ -d .bash ];then
+    for i in $(ls .bash);do
+	source ~/.bash/$i
+    done
+fi
