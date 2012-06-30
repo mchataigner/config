@@ -14,3 +14,5 @@ export LESS_TERMCAP_us=$'\E[23;35m' # begin underline
 export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/
 export PIGDIR=~/opt/pig/
 export HADOOP_HOME=~/opt/hadoop/
+
+alias ..="cd .."
