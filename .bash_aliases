@@ -11,3 +11,6 @@ export LESS_TERMCAP_so=$'\E[01;31m'    # begin standout-mode - info box
 export LESS_TERMCAP_ue=$'\E[0m'           # end underline
 export LESS_TERMCAP_us=$'\E[23;35m' # begin underline
 
+export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/
+export PIGDIR=~/opt/pig/
+export HADOOP_HOME=~/opt/hadoop/
