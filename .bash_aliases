@@ -1,6 +1,8 @@
 alias a="xdg-open"
 alias sudo='sudo env PATH=$PATH'
 alias emacs="emacs -nw"
+alias tree="tree -C"
+
 export PATH=$HOME/bin/:$PATH:/home/moot/Documents/install/matlab2/bin/
 
 # Less Colors for Man Pages
@@ -14,5 +16,10 @@ export LESS_TERMCAP_ue=$'\E[0m'           # end underline
 export LESS_TERMCAP_us=$'\E[23;35m' # begin underline
 
 export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/
+export CLASSPATH=$CLASSPATH:/usr/share/java/log4j-1.2.jar
 export PIGDIR=~/opt/pig/
 export HADOOP_HOME=~/opt/hadoop/
+export JBOSS_HOME=~/usr/jboss/
+
+alias ..="cd .."
+
