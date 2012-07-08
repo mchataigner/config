@@ -1,6 +1,8 @@
 alias a="xdg-open"
 alias sudo='sudo env PATH=$PATH'
 alias emacs="emacs -nw"
+alias tree="tree -C"
+
 export PATH=$HOME/bin/:$PATH:/home/moot/Documents/install/matlab2/bin/
 
 # Less Colors for Man Pages
