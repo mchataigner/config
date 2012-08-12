@@ -1,5 +1,6 @@
 alias a="xdg-open"
 alias sudo='sudo env PATH=$PATH'
+alias sudds='/usr/bin/sudo -s'
 alias emacs="emacs -nw"
 alias tree="tree -C"
 
