@@ -2,6 +2,8 @@ alias a="xdg-open"
 alias sudo='sudo env PATH=$PATH'
 alias emacs="emacs -nw"
 alias tree="tree -C"
+alias synaptic="synclient TapButton2=2 && synclient TapButton3=3"
+
 
 export PATH=$HOME/bin/:$PATH:/home/moot/Documents/install/matlab2/bin/
 

@@ -20,4 +20,5 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+synclient TapButton3=3 TapButton2=2
 _byobu_sourced=1 . /usr/bin/byobu-launch
