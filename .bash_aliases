@@ -24,3 +24,4 @@ export HADOOP_HOME=~/opt/hadoop/
 
 alias ..="cd .."
 
+export PATH=$(perl ~/usr/cope/cope_path.pl):$PATH
