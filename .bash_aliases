@@ -1,5 +1,6 @@
 alias a="xdg-open"
 alias sudo='sudo env PATH=$PATH'
+alias sudds='/usr/bin/sudo -s'
 alias emacs="emacs -nw"
 alias tree="tree -C"
 alias synaptic="synclient TapButton2=2 && synclient TapButton3=3"
@@ -26,3 +27,4 @@ export HADOOP_HOME=~/opt/hadoop/
 
 alias ..="cd .."
 
+export PATH=$(perl ~/usr/cope/cope_path.pl):$PATH
