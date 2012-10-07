@@ -3,6 +3,8 @@ alias sudo='sudo env PATH=$PATH'
 alias sudds='/usr/bin/sudo -s'
 alias emacs="emacs -nw"
 alias tree="tree -C"
+alias synaptic="synclient TapButton2=2 && synclient TapButton3=3"
+
 
 export PATH=$HOME/bin/:$PATH:/home/moot/Documents/install/matlab2/bin/
 
@@ -27,6 +29,7 @@ export HADOOP_HOME=~/opt/hadoop/
 
 alias ..="cd .."
 
+
 alias mmount="udisks --mount"
 alias unmmount="udisks --unmount"
 
@@ -43,3 +46,5 @@ bck()
 	[ "x$1" = "x" ] && echo "need a parameter" && exit 0
 	for i in $1/*;do rsync -auv $i ~/ ;done
 }
+export PATH=$(perl ~/usr/cope/cope_path.pl):$PATH
+
