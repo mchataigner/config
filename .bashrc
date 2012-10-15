@@ -138,3 +138,5 @@ if [ -d ~/.bash ];then
 	. ~/.bash/$i
     done
 fi
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
