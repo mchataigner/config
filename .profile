@@ -20,22 +20,4 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
-synclient TapButton3=3 TapButton2=2
-_byobu_sourced=1 . /usr/bin/byobu-launch
-
-source /home/moot/.rvm/scripts/rvm
-
-
-export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/
-export CLASSPATH=$CLASSPATH:/usr/share/java/log4j-1.2.jar
-export JBOSS_HOME=/home/moot/opt/jboss/
-export HADOOP_HOME=~/opt/hadoop/
-export PIGDIR=~/opt/pig/
-
-export PATH=$PATH:$HOME/opt/sbt/bin/
-export PATH=$HOME/bin/:$PATH
-#:/home/moot/Documents/install/matlab2/bin/
-
-export PATH=$(perl ~/usr/cope/cope_path.pl):$PATH
-
 
