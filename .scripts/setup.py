@@ -27,6 +27,18 @@ def install_packages():
 		sub.call(['sudo','apt-get','update'])
 		sub.call(['sudo','apt-get','install']+packages)
 
+def config_ssh():
+
+	if os.path.isdir(home+'tmp'):
+		sub.call(['rm','-rf',home+'tmp'])
+	os.mkdir('tmp')
+	if not os.path.isdir(home+'.ssh'):
+		os.mkdir('.ssh')
+	sub.call(['encfs',home+'..ssh',home+'tmp'])
+	sub.call(['rsync','-av',home+'tmp/',home+'.ssh/'])
+	sub.call(['chmod','700','-R',home+'.ssh'])
+	sub.call(['fusermount','-u',home+'tmp'])
+
 def git_repo():
 	os.chdir(home+'usr')
 	f = open(home+'.git_repositories')
@@ -52,4 +64,5 @@ def git_repo():
 depend()
 git_init()
 install_packages()
+config_ssh()
 git_repo()
