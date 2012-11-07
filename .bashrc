@@ -139,22 +139,37 @@ if [ -d ~/.bash ];then
     done
 fi
 
-export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+if [ -d $HOME/.rvm ];then
+    export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+    source $HOME/.rvm/scripts/rvm
+fi
 
-synclient TapButton3=3 TapButton2=2
+#synclient TapButton3=3 TapButton2=2
 
-source /home/moot/.rvm/scripts/rvm
+if [ -d /usr/lib/jvm ] && [ -d /usr/lib/jvm/java-7-openjdk-amd64 ];then
+    export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/
+    export CLASSPATH=$CLASSPATH:/usr/share/java/log4j-1.2.jar
+fi
 
+if [ -d $HOME/opt/ ];then
+    if [ -d $HOME/opt/jboss/ ];then
+        export JBOSS_HOME=$HOME/opt/jboss/
+    fi
+    if [ -d $HOME/opt/hadoop/ ];then
+        export HADOOP_HOME=~/opt/hadoop/
+    fi
+    if [ -d $HOME/opt/pig/ ];then
+        export PIGDIR=~/opt/pig/
+    fi
+    if [ -d $HOME/opt/sbt/bin/ ];then
+        export PATH=$PATH:$HOME/opt/sbt/bin/
+    fi
+    if [ -d $HOME/bin/ ];then
+        export PATH=$HOME/bin/:$PATH
+    fi
+fi
 
-export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/
-export CLASSPATH=$CLASSPATH:/usr/share/java/log4j-1.2.jar
-export JBOSS_HOME=/home/moot/opt/jboss/
-export HADOOP_HOME=~/opt/hadoop/
-export PIGDIR=~/opt/pig/
+#:$HOME/Documents/install/matlab2/bin/
 
-export PATH=$PATH:$HOME/opt/sbt/bin/
-export PATH=$HOME/bin/:$PATH
-#:/home/moot/Documents/install/matlab2/bin/
-
-export PATH=$(perl ~/usr/cope/cope_path.pl):$PATH:/home/moot/bin
+export PATH=$(perl ~/usr/cope/cope_path.pl):$PATH:$HOME/bin
 
