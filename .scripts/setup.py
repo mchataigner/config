@@ -16,8 +16,8 @@ def depend():
 
 def git_init():
 	sub.call(['git','clone','https://github.com/mootcube/config.git'])
-	sub.call(['rsync','-av','~/config/','~/'])
-	sub.call(['rm','-rf','~/config'])
+	sub.call(['rsync','-av',home+'config/',home+'/'])
+	sub.call(['rm','-rf',home+'/config'])
 
 def install_packages():
 	if os.path.isfile(home+'.packages'):
