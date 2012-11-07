@@ -142,7 +142,6 @@ fi
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 synclient TapButton3=3 TapButton2=2
-_byobu_sourced=1 . /usr/bin/byobu-launch
 
 source /home/moot/.rvm/scripts/rvm
 
