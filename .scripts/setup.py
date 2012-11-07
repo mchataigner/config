@@ -38,6 +38,7 @@ def config_ssh():
 	sub.call(['chmod','700','-R',home+'.ssh'])
 	sub.call(['fusermount','-u',home+'tmp'])
 	sub.call(['ssh-add'])
+	sub.call(['rsync','-av',home+'.gitconfig_config',home+'.git/config'])
 
 def git_repo():
 	os.chdir(home+'usr')
