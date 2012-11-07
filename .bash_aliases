@@ -1,11 +1,10 @@
 alias a="xdg-open"
-alias sudo='sudo env PATH=$PATH'
+# alias sudo='sudo env PATH=$PATH'
 alias sudds='/usr/bin/sudo -s'
 alias emacs="emacs -nw"
 alias tree="tree -C"
+
 alias synaptic="synclient TapButton2=2 && synclient TapButton3=3"
-
-
 
 # Less Colors for Man Pages
 
@@ -19,12 +18,7 @@ export LESS_TERMCAP_us=$'\E[23;35m' # begin underline
 
 export LESSOPEN='|/usr/share/source-highlight/src-hilite-lesspipe.sh %s'
 
-
-
-
-
 alias ..="cd .."
-
 
 alias mmount="udisks --mount"
 alias unmmount="udisks --unmount"
