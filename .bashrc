@@ -141,7 +141,7 @@ fi
 
 if [ -d $HOME/.rvm ];then
     export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-    source /home/moot/.rvm/scripts/rvm
+    source $HOME/.rvm/scripts/rvm
 fi
 
 #synclient TapButton3=3 TapButton2=2
@@ -153,14 +153,14 @@ if [ -d /usr/lib/jvm ] && [ -d /usr/lib/jvm/java-7-openjdk-amd64 ];then
     export CLASSPATH=$CLASSPATH:/usr/share/java/log4j-1.2.jar
 fi
 
-if [ -d /home/moot/opt/ ];then
-    if [ -d /home/moot/opt/jboss/ ];then
-        export JBOSS_HOME=/home/moot/opt/jboss/
+if [ -d $HOME/opt/ ];then
+    if [ -d $HOME/opt/jboss/ ];then
+        export JBOSS_HOME=$HOME/opt/jboss/
     fi
-    if [ -d /home/moot/opt/hadoop/ ];then
+    if [ -d $HOME/opt/hadoop/ ];then
         export HADOOP_HOME=~/opt/hadoop/
     fi
-    if [ -d /home/moot/opt/pig/ ];then
+    if [ -d $HOME/opt/pig/ ];then
         export PIGDIR=~/opt/pig/
     fi
     if [ -d $HOME/opt/sbt/bin/ ];then
@@ -171,7 +171,7 @@ if [ -d /home/moot/opt/ ];then
     fi
 fi
 
-#:/home/moot/Documents/install/matlab2/bin/
+#:$HOME/Documents/install/matlab2/bin/
 
-export PATH=$(perl ~/usr/cope/cope_path.pl):$PATH:/home/moot/bin
+export PATH=$(perl ~/usr/cope/cope_path.pl):$PATH:$HOME/bin
 
