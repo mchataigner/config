@@ -28,7 +28,6 @@ def install_packages():
 		sub.call(['sudo','apt-get','install']+packages)
 
 def config_ssh():
-
 	if os.path.isdir(home+'tmp'):
 		sub.call(['rm','-rf',home+'tmp'])
 	os.mkdir('tmp')
@@ -38,6 +37,7 @@ def config_ssh():
 	sub.call(['rsync','-av',home+'tmp/',home+'.ssh/'])
 	sub.call(['chmod','700','-R',home+'.ssh'])
 	sub.call(['fusermount','-u',home+'tmp'])
+	sub.call(['ssh-add'])
 
 def git_repo():
 	os.chdir(home+'usr')
