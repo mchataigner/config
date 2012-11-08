@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import os,subprocess as sub
 
@@ -22,10 +22,13 @@ def git_init():
 def install_packages():
 	if os.path.isfile(home+'.packages'):
 		f = open(home+'.packages')
-		packages = list(map(lambda i: i.strip(),f.readlines()))
+		packages = [i.strip() for i in f.readlines() if len(i.strip())>0]
 		f.close()
-		sub.call(['sudo','apt-get','update'])
-		sub.call(['sudo','apt-get','install']+packages)
+		print(' '.join(packages))
+
+		sub.call(['sudo','apt-get','update','-y'])
+		sub.call(['sudo','apt-get','dist-upgrade','-y'])
+		sub.call(['sudo','apt-get','install','-y']+packages)
 
 def config_ssh():
 	if os.path.isdir(home+'tmp'):
@@ -62,8 +65,13 @@ def git_repo():
 		os.chdir(cur)
 	f.close()
 
-depend()
-git_init()
-install_packages()
-config_ssh()
-git_repo()
+def apps():
+	sub.call(['wget','http://apt.typesafe.com/repo-deb-build-0002.deb'])
+	sub.call(['sudo','dpki','-i','repo-deb-build-0002.deb'])
+
+if __name__ == "__main__":
+	depend()
+	git_init()
+	install_packages()
+	config_ssh()
+	git_repo()
