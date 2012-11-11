@@ -25,6 +25,11 @@ htop
 ia32-libs
 ia32-libs-multiarch
 ipython3
+libc6-dev
+libexpat1-dev
+libgl1-mesa-dev
+libqt4-dev
+libssl-dev
 libusb-dev
 maven2
 mercurial
