@@ -94,17 +94,7 @@ xterm*|rxvt*)
     ;;
 esac
 
-# enable color support of ls and also add handy aliases
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=always'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
 
-    alias grep='grep --color=always'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-fi
 
 # some more ls aliases
 alias ll='ls -alF'
@@ -133,43 +123,6 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-if [ -d ~/.bash ];then
-    for i in $(ls ~/.bash);do
-	. ~/.bash/$i
-    done
+if [ -f ~/.commonrc ]; then
+    . $HOME/.commonrc
 fi
-
-if [ -d $HOME/.rvm ];then
-    export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-    source $HOME/.rvm/scripts/rvm
-fi
-
-#synclient TapButton3=3 TapButton2=2
-
-if [ -d /usr/lib/jvm ] && [ -d /usr/lib/jvm/java-7-openjdk-amd64 ];then
-    export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/
-    export CLASSPATH=$CLASSPATH:/usr/share/java/log4j-1.2.jar
-fi
-
-if [ -d $HOME/opt/ ];then
-    if [ -d $HOME/opt/jboss/ ];then
-        export JBOSS_HOME=$HOME/opt/jboss/
-    fi
-    if [ -d $HOME/opt/hadoop/ ];then
-        export HADOOP_HOME=~/opt/hadoop/
-    fi
-    if [ -d $HOME/opt/pig/ ];then
-        export PIGDIR=~/opt/pig/
-    fi
-    if [ -d $HOME/opt/sbt/bin/ ];then
-        export PATH=$PATH:$HOME/opt/sbt/bin/
-    fi
-    if [ -d $HOME/bin/ ];then
-        export PATH=$HOME/bin/:$PATH
-    fi
-fi
-
-#:$HOME/Documents/install/matlab2/bin/
-
-export PATH=$(perl ~/usr/cope/cope_path.pl):$PATH:$HOME/bin
-
