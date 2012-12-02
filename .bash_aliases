@@ -1,3 +1,9 @@
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+alias less='less -R'
 alias a="xdg-open"
 # alias sudo='sudo env PATH=$PATH'
 alias sudds='/usr/bin/sudo -s'
