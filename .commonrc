@@ -28,6 +28,8 @@ if [ -d /usr/lib/jvm ] && [ -d /usr/lib/jvm/java-7-openjdk-amd64 ];then
     export CLASSPATH=$CLASSPATH:/usr/share/java/log4j-1.2.jar
 fi
 
+export PATH=$(perl ~/usr/perso/cope/cope_path.pl):$PATH:$HOME/bin
+
 if [ -d $HOME/opt/ ];then
     if [ -d $HOME/opt/jboss/ ];then
         export JBOSS_HOME=$HOME/opt/jboss/
@@ -48,6 +50,5 @@ fi
 
 #:$HOME/Documents/install/matlab2/bin/
 
-export PATH=$(perl ~/usr/cope/cope_path.pl):$PATH:$HOME/bin
 
 
