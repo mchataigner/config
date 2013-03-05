@@ -6,7 +6,7 @@ wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master
 
 wget --no-check-certificate https://github.com/mchataigner/config/raw/master/.gitconfig
 
-git clone https://github.com/mchataigner/config.git .mathconfig
+git clone --recursive https://github.com/mchataigner/config.git .mathconfig
 
 rsync -av .mathconfig/ $HOME
 
