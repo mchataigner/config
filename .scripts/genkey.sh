@@ -6,7 +6,11 @@ else
   ssh-keygen -t rsa -C $mail
 fi
 
-sudo apt-get install xclip
+if [ -e "$(which xclip)" ]; then
+  echo -n ""
+else
+  sudo apt-get install xclip
+fi
 
 xclip -sel clip < ~/.ssh/id_rsa.pub
 
