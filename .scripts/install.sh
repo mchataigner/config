@@ -11,6 +11,3 @@ git clone --recursive https://github.com/mchataigner/config.git .mathconfig
 rsync -av .mathconfig/ $HOME
 
 rm -rf .mathconfig
-
-git submodule update --init
-
