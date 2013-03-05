@@ -1,0 +1,3 @@
+[submodule "usr/cope"]
+	path = usr/cope
+	url = git@github.com:mchataigner/cope.git
