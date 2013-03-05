@@ -7,4 +7,4 @@ personnal configuration
 
 ```chmod +x install.sh```
 
-```./install.sh```
+``` ./install.sh ```
