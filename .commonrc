@@ -48,6 +48,6 @@ fi
 
 #:$HOME/Documents/install/matlab2/bin/
 
-export PATH=$(perl ~/usr/cope/cope_path.pl):$PATH:$HOME/bin
+export PATH=$HOME/bin/:$(perl ~/usr/cope/cope_path.pl):$PATH
 
 
