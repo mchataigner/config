@@ -12,13 +12,7 @@ rsync -av .mathconfig/ $HOME
 
 rm -rf .mathconfig
 
-if [ -e ~/.ssh/id_rsa.pub ]; then
-  echo "ssh key already exists"
-else
-  echo "What is your email?";
-  read mail;
-  ssh-keygen -t rsa -C $mail
-fi
+~/.scripts/genkey.sh
 
 sudo apt-get install xclip
 
