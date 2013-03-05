@@ -1,6 +1,6 @@
 #!/bin/sh
 
-git clone git@github.com:mchataigner/config.git .mathconfig
+git clone https://github.com/mchataigner/config.git
 
 mv .mathconfig/* $HOME
 mv .mathconfig/.* $HOME
