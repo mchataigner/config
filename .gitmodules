@@ -4,3 +4,6 @@
 [submodule "usr/dfc"]
 	path = usr/dfc
 	url = https://github.com/mootcube/dfc.git
+[submodule ".fonts/ubuntu-mono-powerline"]
+	path = .fonts/ubuntu-mono-powerline
+	url = https://github.com/scotu/ubuntu-mono-powerline.git
