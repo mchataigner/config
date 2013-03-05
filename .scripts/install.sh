@@ -14,6 +14,3 @@ rm -rf .mathconfig
 
 ~/.scripts/genkey.sh
 
-sudo apt-get install xclip
-
-xclip -sel clip < ~/.ssh/id_rsa.pub
