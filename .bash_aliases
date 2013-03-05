@@ -3,6 +3,8 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+
+
 alias less='less -R'
 alias a="xdg-open"
 # alias sudo='sudo env PATH=$PATH'
@@ -23,6 +25,8 @@ export LESS_TERMCAP_ue=$'\E[0m'           # end underline
 export LESS_TERMCAP_us=$'\E[23;35m' # begin underline
 
 export LESSOPEN='|/usr/share/source-highlight/src-hilite-lesspipe.sh %s'
+
+export PATH=$PATH:$HOME/opt/play/:$HOME/bin/
 
 alias ..="cd .."
 
