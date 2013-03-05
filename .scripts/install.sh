@@ -12,5 +12,5 @@ rsync -av .mathconfig/ $HOME
 
 rm -rf .mathconfig
 
-
+git submodule update --init
 
