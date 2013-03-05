@@ -3,14 +3,19 @@ bin
 opt
 *~
 tmp
-.*
 Desktop
 Documents
 Downloads
 Dropbox
 IdeaProjects
+RubymineProjects
+work
 Steam
 data
 Programs
 usr
-workspace
+workspace*
+VirtualBox VMs
+sbt-launch.jar
+viadeo
+
