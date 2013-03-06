@@ -14,7 +14,3 @@ rm -rf .mathconfig
 
 ~/.scripts/genkey.sh
 
-git clone https://github.com/jcorbin/konsole-colorscheme-solarized.git solar
-
-rsync -av solar/ ~/.kde/share/apps/konsole
-
