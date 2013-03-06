@@ -1,5 +1,5 @@
 [Appearance]
-ColorScheme=Solarized Dark
+ColorScheme=bl1nk
 Font=Ubuntu Mono,12,-1,5,50,0,0,0,0,0
 
 [General]
