@@ -39,3 +39,4 @@ source $HOME/.commonrc
 source $HOME/.bash_aliases
 
 setopt GLOB_COMPLETE
+
