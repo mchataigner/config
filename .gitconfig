@@ -1,6 +1,6 @@
 [user]
 	name = Mathieu Chataigner
-	email = mathieu.chataigner@gmail.com
+	email = mchataigner@viadeoteam.com
 
 [alias]
 	ls = ls-tree --name-only HEAD
@@ -33,3 +33,6 @@
 
 [core]
 	autocrlf = input
+
+[github]
+	user = mchataigner

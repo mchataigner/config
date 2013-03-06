@@ -29,7 +29,7 @@ ZSH_THEME="agnoster"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git git-flow git-extras github gem cp knife mvn rsync rvm ruby screen ssh-agent sublime vagrant play)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -39,3 +39,7 @@ source $HOME/.commonrc
 source $HOME/.bash_aliases
 
 setopt GLOB_COMPLETE
+
+# fpath=$fpath:$HOME/.zconfig/zsh-comp/src/
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

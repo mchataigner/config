@@ -1,0 +1,2 @@
+bind b eval "writebuf" "exec sh -c 'xclip /tmp/screen-exchange'"
+
