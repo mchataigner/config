@@ -3,7 +3,8 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-
+alias upd='sudo apt-get update && sudo apt-get dist-upgrade'
+alias ins='sudo apt-get install '
 
 alias less='less -R'
 alias a="xdg-open"
