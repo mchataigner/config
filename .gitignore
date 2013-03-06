@@ -2,6 +2,7 @@ devoxx
 bin
 opt
 *~
+.*
 tmp
 Desktop
 Documents
@@ -18,4 +19,5 @@ workspace*
 VirtualBox VMs
 sbt-launch.jar
 viadeo
+install.sh
 
