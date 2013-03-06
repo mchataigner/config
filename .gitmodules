@@ -7,3 +7,6 @@
 [submodule ".fonts/ubuntu-mono-powerline"]
 	path = .fonts/ubuntu-mono-powerline
 	url = https://github.com/scotu/ubuntu-mono-powerline.git
+[submodule "zsh-completions"]
+	path = zsh-completions
+	url = https://github.com/zsh-users/zsh-completions.git
