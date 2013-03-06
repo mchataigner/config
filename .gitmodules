@@ -10,3 +10,6 @@
 [submodule "zsh-completions"]
 	path = zsh-completions
 	url = https://github.com/zsh-users/zsh-completions.git
+[submodule "/home/mchataig/.zshconfig/zsh-comp"]
+	path = /home/mchataig/.zshconfig/zsh-comp
+	url = https://github.com/zsh-users/zsh-completions.git

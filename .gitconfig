@@ -33,3 +33,6 @@
 
 [core]
 	autocrlf = input
+
+[github]
+	user = mchataigner
