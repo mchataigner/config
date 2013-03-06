@@ -14,3 +14,6 @@ rm -rf .mathconfig
 
 ~/.scripts/genkey.sh
 
+mkdir -p ~/opt ~/bin ~/usr 
+
+

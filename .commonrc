@@ -64,7 +64,7 @@ if [ -d /usr/lib/jvm ] && [ -d /usr/lib/jvm/java-7-openjdk-amd64 ];then
     export CLASSPATH=$CLASSPATH:/usr/share/java/log4j-1.2.jar
 fi
 
-export PATH=$PATH:$HOME/opt/play/
+export PATH=$HOME/opt/play/:$PATH
 export PATH=$PATH:$HOME/bin
 
 if [ -d $HOME/usr/cope/ ];then
