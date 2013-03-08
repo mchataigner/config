@@ -1,6 +1,6 @@
 [user]
 	name = Mathieu Chataigner
-	email = mchataigner@viadeoteam.com
+	email = mathieu.chataigner@gmail.com
 
 [alias]
 	ls = ls-tree --name-only HEAD
@@ -36,3 +36,5 @@
 
 [github]
 	user = mchataigner
+[branch]
+	autosetupmerge = true
