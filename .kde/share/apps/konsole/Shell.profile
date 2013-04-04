@@ -6,3 +6,7 @@ Font=Ubuntu Mono,12,-1,5,50,0,0,0,0,0
 Command=/bin/zsh
 Name=Shell
 Parent=FALLBACK/
+
+[Scrolling]
+HistoryMode=0
+ScrollBarPosition=2
