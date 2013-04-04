@@ -3,8 +3,17 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+alias sshk="ssh killdozer"
+alias ssht="ssh thinkpad"
+
+alias dfc='dfc -w'
+
+alias ckernel="dpkg -l linux-\* | awk '/^ii/{ print $2}' | grep -v -e `uname -r | cut -f1,2 -d"-"` | grep --color=auto -e \"-[0-9.\-]\+\" | xargs sudo apt-get --dry-run remove"
+
 alias upd='sudo apt-get update && sudo apt-get dist-upgrade'
 alias inst='sudo apt-get install '
+
+alias lopen='sudo cryptsetup luksOpen '
 
 #compdef inst="sudo apt-get install"
 
