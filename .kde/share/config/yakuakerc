@@ -1,5 +1,13 @@
+[Animation]
+Frames=0
+
 [Colors]
 CurrentPalette=Forty Colors
 
 [Desktop Entry]
 DefaultProfile=Shell.profile
+
+[Window]
+Height=100
+ShowTabBar=false
+Width=93
