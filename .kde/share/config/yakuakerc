@@ -3,3 +3,7 @@ CurrentPalette=Forty Colors
 
 [Desktop Entry]
 DefaultProfile=Shell.profile
+
+[Shortcuts]
+decrease-window-width=none
+increase-window-width=none
