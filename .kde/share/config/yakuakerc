@@ -1,3 +1,6 @@
+[Animation]
+Frames=0
+
 [Colors]
 CurrentPalette=Forty Colors
 
@@ -7,3 +10,8 @@ DefaultProfile=Shell.profile
 [Shortcuts]
 decrease-window-width=none
 increase-window-width=none
+
+[Window]
+Height=100
+ShowTabBar=false
+Width=93
