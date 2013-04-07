@@ -152,6 +152,10 @@ decrease_volume=Volume Down,Volume Down,Decrease Volume
 increase_volume=Volume Up,Volume Up,Increase Volume
 mute=Volume Mute,Volume Mute,Mute
 
+[konsole]
+Konsole Background Mode=Alt+P,Ctrl+Shift+F12,Toggle Background Window
+_k_friendly_name=Konsole
+
 [krunner]
 Lock Session=Ctrl+Alt+L,Ctrl+Alt+L,Lock Session
 PowerDevil=none,none,Run Command (runner "PowerDevil" only)
@@ -358,4 +362,4 @@ manage activities=Meta+Q,Meta+Q,Activities...
 
 [yakuake]
 _k_friendly_name=Yakuake
-toggle-window-state=Alt+P,F12,Open/Retract Yakuake
+toggle-window-state=none,F12,Open/Retract Yakuake
