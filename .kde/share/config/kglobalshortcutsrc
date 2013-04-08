@@ -35,6 +35,7 @@ toggleMainWindow=none,none,Toggle Main Window
 [kactivitymanagerd]
 _k_friendly_name=KDE Activity Manager
 switch-to-activity-09023b48-d313-484d-a093-1f1a8846ab59=none,none,Switch to activity "New Activity"
+switch-to-activity-18c45274-7f65-4d36-a7e0-49879f684aa0=none,none,Switch to activity "Desktop"
 
 [kded]
 Decrease Screen Brightness=Monitor Brightness Down,Monitor Brightness Down,Decrease Screen Brightness
@@ -47,7 +48,7 @@ display=Display,Display,Switch Display
 
 [khotkeys]
 _k_friendly_name=khotkeys
-{5a0280e1-7f88-4f1c-b961-4f901cd28b92}=Print,none,PrintScreen
+{bddecc70-31ee-4aef-ba76-7e2470b5ba0a}=none,none,PrintScreen
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=Search,none,Search
 
 [klipper]
@@ -185,7 +186,7 @@ Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp,Ctrl+Alt+Shift+PgUp,Reboot Witho
 _k_friendly_name=The KDE Session Manager
 
 [ktorrent]
-_k_friendly_name=KTorrent
+_k_friendly_name=ktorrent
 queue_suspend=Alt+Shift+P,Alt+Shift+P,Suspend Torrents
 show_kt=Alt+Shift+T,Alt+Shift+T,Show/Hide KTorrent
 
@@ -276,10 +277,10 @@ Walk Through Windows of Current Application=Alt+`,Alt+`,Walk Through Windows of 
 Walk Through Windows of Current Application (Reverse)=Alt+~,Alt+~,Walk Through Windows of Current Application (Reverse)
 Walk Through Windows of Current Application Alternative=none,none,Walk Through Windows of Current Application Alternative
 Walk Through Windows of Current Application Alternative (Reverse)=none,none,Walk Through Windows of Current Application Alternative (Reverse)
-Window Above Other Windows=none,none,Keep Window Above Others
+Window Above Other Windows=Ctrl+F11,none,Keep Window Above Others
 Window Below Other Windows=none,none,Keep Window Below Others
 Window Close=Alt+.,Alt+F4,Close Window
-Window Fullscreen=F11,none,Make Window Fullscreen
+Window Fullscreen=none,none,Make Window Fullscreen
 Window Grow Horizontal=none,none,Pack Grow Window Horizontally
 Window Grow Vertical=none,none,Pack Grow Window Vertically
 Window Lower=none,none,Lower Window
@@ -352,14 +353,20 @@ Previous Activity=Meta+Shift+Tab,Meta+Shift+Tab,Previous Activity
 Show Dashboard=Ctrl+F12,Ctrl+F12,Show Dashboard
 Systemtray-Klipper-8=Ctrl+Alt+V,Ctrl+Alt+V,
 _k_friendly_name=Plasma Desktop Shell
-activate widget 1=none,none,Activate Message Indicator Widget
+activate widget 1=none,none,Activate Instant Messaging Presence Widget
 activate widget 10=none,none,Activate Notifications Widget
 activate widget 18=none,none,Activate Network Management Widget
 activate widget 19=none,none,Activate Battery Monitor Widget
+activate widget 2=Wireless,Wireless,Activate Network Management Widget
 activate widget 3=none,none,Activate Device Notifier Widget
 activate widget 4=Alt+F1,Alt+F1,Activate Application Launcher Widget
 manage activities=Meta+Q,Meta+Q,Activities...
 
+[wacomtablet]
+Toggle stylus mode=Meta+Ctrl+S,Meta+Ctrl+S,Toggle the Stylus Tool Relative/Absolute
+Toggle touch tool=Meta+Ctrl+T,Meta+Ctrl+T,Enable/Disable the Touch Tool
+_k_friendly_name=Graphic Tablet Configuration daemon
+
 [yakuake]
-_k_friendly_name=Yakuake
-toggle-window-state=none,F12,Open/Retract Yakuake
+_k_friendly_name=yakuake
+toggle-window-state=,F12,Open/Retract Yakuake
