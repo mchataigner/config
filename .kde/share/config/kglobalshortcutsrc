@@ -155,7 +155,7 @@ mute=Volume Mute,Volume Mute,Mute
 
 [konsole]
 Konsole Background Mode=Alt+P,Ctrl+Shift+F12,Toggle Background Window
-_k_friendly_name=Konsole
+_k_friendly_name=konsole
 
 [krunner]
 Lock Session=Ctrl+Alt+L,Ctrl+Alt+L,Lock Session
