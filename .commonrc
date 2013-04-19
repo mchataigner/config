@@ -4,6 +4,10 @@ if [ -f ~/.targetrc ]; then
     source ~/.targetrc
 fi
 
+if [ "x$TERM" = "xxterm" ]; then
+    export TERM=xterm-256color
+fi
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'

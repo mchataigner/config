@@ -50,3 +50,5 @@
 
 [branch]
 	autosetupmerge = false
+[pull]
+	rebase = true
