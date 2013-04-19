@@ -1,3 +1,9 @@
+# export TERM="xterm-256color"
+
+if [ -f ~/.targetrc ]; then
+    source ~/.targetrc
+fi
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
@@ -90,6 +96,3 @@ if [ -d $HOME/opt/ ];then
         export PATH=$HOME/bin/:$PATH
     fi
 fi
-
-#:$HOME/Documents/install/matlab2/bin/
-

@@ -1,5 +1,5 @@
 [$Version]
-update_info=plasma-to-plasmadesktop-shortcuts.upd:4.3plasma-desktop-shortcuts,kwin_window_shortcuts.upd:kde414,ksmserver_shortcuts.upd:kde45
+update_info=plasma-to-plasmadesktop-shortcuts.upd:4.3plasma-desktop-shortcuts,kwin_window_shortcuts.upd:kde414,ksmserver_shortcuts.upd:kde45,kscreenlocker_locksession-shortcut.upd:4.9-locksession-shortcut,ksmserver_shortcuts.upd:kde4.10,ksmserver_shortcuts.upd:kde4.10-remove-group-kscreenlocker
 
 [KDE Keyboard Layout Switcher]
 Switch keyboard layout to French=none,none,Switch keyboard layout to French
@@ -34,6 +34,7 @@ toggleMainWindow=none,none,Toggle Main Window
 
 [kactivitymanagerd]
 _k_friendly_name=KDE Activity Manager
+switch-to-activity-044ac853-e45a-4f95-af8b-a6d0ed218d9c=none,none,Switch to activity "Desktop"
 switch-to-activity-09023b48-d313-484d-a093-1f1a8846ab59=none,none,Switch to activity "New Activity"
 
 [kded]
@@ -47,7 +48,8 @@ display=Display,Display,Switch Display
 
 [khotkeys]
 _k_friendly_name=khotkeys
-{5a0280e1-7f88-4f1c-b961-4f901cd28b92}=Print,none,PrintScreen
+{074f0c53-090b-420a-aa50-d238d36f968f}=Ctrl+Shift+K,none,konsole
+{a9acbe3c-a5b1-412c-8615-b60d24327b3f}=,none,PrintScreen
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=Search,none,Search
 
 [klipper]
@@ -57,6 +59,7 @@ cycleNextAction=none,none,Next History Item
 cyclePrevAction=none,none,Previous History Item
 edit_clipboard=none,none,Edit Contents...
 repeat_action=Ctrl+Alt+R,Ctrl+Alt+R,Manually Invoke Action on Current Clipboard
+show-barcode=none,none,Show Barcode...
 show-on-mouse-pos=none,none,Open Klipper at Mouse Position
 
 [kmix]
@@ -157,7 +160,6 @@ Konsole Background Mode=Alt+P,Ctrl+Shift+F12,Toggle Background Window
 _k_friendly_name=Konsole
 
 [krunner]
-Lock Session=Ctrl+Alt+L,Ctrl+Alt+L,Lock Session
 PowerDevil=none,none,Run Command (runner "PowerDevil" only)
 Run Command=Alt+F2,Alt+F2,Run Command
 Run Command on clipboard contents=Alt+Shift+F2,Alt+Shift+F2,Run Command on clipboard contents
@@ -179,13 +181,14 @@ windows=none,none,Run Command (runner "Windows" only)
 
 [ksmserver]
 Halt Without Confirmation=Ctrl+Alt+Shift+PgDown,Ctrl+Alt+Shift+PgDown,Halt Without Confirmation
+Lock Session=Ctrl+Alt+L,Ctrl+Alt+L,Lock Session
 Log Out=Ctrl+Alt+Del,Ctrl+Alt+Del,Log Out
 Log Out Without Confirmation=Ctrl+Alt+Shift+Del,Ctrl+Alt+Shift+Del,Log Out Without Confirmation
 Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp,Ctrl+Alt+Shift+PgUp,Reboot Without Confirmation
 _k_friendly_name=The KDE Session Manager
 
 [ktorrent]
-_k_friendly_name=KTorrent
+_k_friendly_name=ktorrent
 queue_suspend=Alt+Shift+P,Alt+Shift+P,Suspend Torrents
 show_kt=Alt+Shift+T,Alt+Shift+T,Show/Hide KTorrent
 
@@ -276,7 +279,7 @@ Walk Through Windows of Current Application=Alt+`,Alt+`,Walk Through Windows of 
 Walk Through Windows of Current Application (Reverse)=Alt+~,Alt+~,Walk Through Windows of Current Application (Reverse)
 Walk Through Windows of Current Application Alternative=none,none,Walk Through Windows of Current Application Alternative
 Walk Through Windows of Current Application Alternative (Reverse)=none,none,Walk Through Windows of Current Application Alternative (Reverse)
-Window Above Other Windows=none,none,Keep Window Above Others
+Window Above Other Windows=Ctrl+F11,none,Keep Window Above Others
 Window Below Other Windows=none,none,Keep Window Below Others
 Window Close=Alt+.,Alt+F4,Close Window
 Window Fullscreen=F11,none,Make Window Fullscreen
@@ -350,16 +353,21 @@ view_zoom_out=Meta+-,Meta+-,Zoom Out
 Next Activity=Meta+Tab,Meta+Tab,Next Activity
 Previous Activity=Meta+Shift+Tab,Meta+Shift+Tab,Previous Activity
 Show Dashboard=Ctrl+F12,Ctrl+F12,Show Dashboard
+Stop Activity=,Meta+S,Stop Current Activity
+SystemTray-Klipper-8=,Ctrl+Alt+V,
 Systemtray-Klipper-8=Ctrl+Alt+V,Ctrl+Alt+V,
 _k_friendly_name=Plasma Desktop Shell
-activate widget 1=none,none,Activate Message Indicator Widget
 activate widget 10=none,none,Activate Notifications Widget
-activate widget 18=none,none,Activate Network Management Widget
 activate widget 19=none,none,Activate Battery Monitor Widget
-activate widget 3=none,none,Activate Device Notifier Widget
+activate widget 2=Wireless,Wireless,Activate Network Management Widget
 activate widget 4=Alt+F1,Alt+F1,Activate Application Launcher Widget
 manage activities=Meta+Q,Meta+Q,Activities...
 
+[wacomtablet]
+Toggle stylus mode=Meta+Ctrl+S,Meta+Ctrl+S,Toggle the Stylus Tool Relative/Absolute
+Toggle touch tool=Meta+Ctrl+T,Meta+Ctrl+T,Enable/Disable the Touch Tool
+_k_friendly_name=Graphic Tablet Configuration daemon
+
 [yakuake]
-_k_friendly_name=Yakuake
+_k_friendly_name=yakuake
 toggle-window-state=none,F12,Open/Retract Yakuake
