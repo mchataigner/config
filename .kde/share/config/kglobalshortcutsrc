@@ -1,5 +1,5 @@
 [$Version]
-update_info=plasma-to-plasmadesktop-shortcuts.upd:4.3plasma-desktop-shortcuts,kwin_window_shortcuts.upd:kde414,ksmserver_shortcuts.upd:kde45
+update_info=plasma-to-plasmadesktop-shortcuts.upd:4.3plasma-desktop-shortcuts,kwin_window_shortcuts.upd:kde414,ksmserver_shortcuts.upd:kde45,kscreenlocker_locksession-shortcut.upd:4.9-locksession-shortcut,ksmserver_shortcuts.upd:kde4.10,ksmserver_shortcuts.upd:kde4.10-remove-group-kscreenlocker
 
 [KDE Keyboard Layout Switcher]
 Switch keyboard layout to French=none,none,Switch keyboard layout to French
@@ -34,6 +34,7 @@ toggleMainWindow=none,none,Toggle Main Window
 
 [kactivitymanagerd]
 _k_friendly_name=KDE Activity Manager
+switch-to-activity-044ac853-e45a-4f95-af8b-a6d0ed218d9c=none,none,Switch to activity "Desktop"
 switch-to-activity-09023b48-d313-484d-a093-1f1a8846ab59=none,none,Switch to activity "New Activity"
 switch-to-activity-18c45274-7f65-4d36-a7e0-49879f684aa0=none,none,Switch to activity "Desktop"
 
@@ -49,6 +50,7 @@ display=Display,Display,Switch Display
 [khotkeys]
 _k_friendly_name=khotkeys
 {bddecc70-31ee-4aef-ba76-7e2470b5ba0a}=none,none,PrintScreen
+{074f0c53-090b-420a-aa50-d238d36f968f}=Ctrl+Shift+K,none,konsole
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=Search,none,Search
 
 [klipper]
@@ -58,6 +60,7 @@ cycleNextAction=none,none,Next History Item
 cyclePrevAction=none,none,Previous History Item
 edit_clipboard=none,none,Edit Contents...
 repeat_action=Ctrl+Alt+R,Ctrl+Alt+R,Manually Invoke Action on Current Clipboard
+show-barcode=none,none,Show Barcode...
 show-on-mouse-pos=none,none,Open Klipper at Mouse Position
 
 [kmix]
@@ -158,7 +161,6 @@ Konsole Background Mode=Alt+P,Ctrl+Shift+F12,Toggle Background Window
 _k_friendly_name=konsole
 
 [krunner]
-Lock Session=Ctrl+Alt+L,Ctrl+Alt+L,Lock Session
 PowerDevil=none,none,Run Command (runner "PowerDevil" only)
 Run Command=Alt+F2,Alt+F2,Run Command
 Run Command on clipboard contents=Alt+Shift+F2,Alt+Shift+F2,Run Command on clipboard contents
@@ -180,6 +182,7 @@ windows=none,none,Run Command (runner "Windows" only)
 
 [ksmserver]
 Halt Without Confirmation=Ctrl+Alt+Shift+PgDown,Ctrl+Alt+Shift+PgDown,Halt Without Confirmation
+Lock Session=Ctrl+Alt+L,Ctrl+Alt+L,Lock Session
 Log Out=Ctrl+Alt+Del,Ctrl+Alt+Del,Log Out
 Log Out Without Confirmation=Ctrl+Alt+Shift+Del,Ctrl+Alt+Shift+Del,Log Out Without Confirmation
 Reboot Without Confirmation=Ctrl+Alt+Shift+PgUp,Ctrl+Alt+Shift+PgUp,Reboot Without Confirmation
@@ -351,11 +354,12 @@ view_zoom_out=Meta+-,Meta+-,Zoom Out
 Next Activity=Meta+Tab,Meta+Tab,Next Activity
 Previous Activity=Meta+Shift+Tab,Meta+Shift+Tab,Previous Activity
 Show Dashboard=Ctrl+F12,Ctrl+F12,Show Dashboard
+Stop Activity=,Meta+S,Stop Current Activity
+SystemTray-Klipper-8=,Ctrl+Alt+V,
 Systemtray-Klipper-8=Ctrl+Alt+V,Ctrl+Alt+V,
 _k_friendly_name=Plasma Desktop Shell
 activate widget 1=none,none,Activate Instant Messaging Presence Widget
 activate widget 10=none,none,Activate Notifications Widget
-activate widget 18=none,none,Activate Network Management Widget
 activate widget 19=none,none,Activate Battery Monitor Widget
 activate widget 2=Wireless,Wireless,Activate Network Management Widget
 activate widget 3=none,none,Activate Device Notifier Widget
@@ -369,4 +373,4 @@ _k_friendly_name=Graphic Tablet Configuration daemon
 
 [yakuake]
 _k_friendly_name=yakuake
-toggle-window-state=,F12,Open/Retract Yakuake
+toggle-window-state=none,F12,Open/Retract Yakuake

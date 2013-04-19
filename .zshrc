@@ -41,5 +41,3 @@ source $HOME/.bash_aliases
 setopt GLOB_COMPLETE
 
 # fpath=$fpath:$HOME/.zconfig/zsh-comp/src/
-
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
