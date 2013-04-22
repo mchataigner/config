@@ -1,15 +1,9 @@
-[submodule "usr/cope"]
-	path = usr/cope
+[submodule "opt/cope"]
+	path = opt/cope
 	url = https://github.com/mchataigner/cope.git
-[submodule "usr/dfc"]
-	path = usr/dfc
+[submodule "opt/dfc"]
+	path = opt/dfc
 	url = https://github.com/mootcube/dfc.git
 [submodule ".fonts/ubuntu-mono-powerline"]
 	path = .fonts/ubuntu-mono-powerline
 	url = https://github.com/scotu/ubuntu-mono-powerline.git
-[submodule "zsh-completions"]
-	path = zsh-completions
-	url = https://github.com/zsh-users/zsh-completions.git
-[submodule "/home/mchataig/.zshconfig/zsh-comp"]
-	path = /home/mchataig/.zshconfig/zsh-comp
-	url = https://github.com/zsh-users/zsh-completions.git
