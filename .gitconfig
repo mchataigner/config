@@ -52,5 +52,3 @@
 	autosetupmerge = false
 [pull]
 	rebase = true
-[push]
-	default = simple
