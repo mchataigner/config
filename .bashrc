@@ -121,4 +121,8 @@ if [ -f ~/.commonrc ]; then
     . $HOME/.commonrc
 fi
 
+if [ -f ~/.targetrc ]; then
+    . $HOME/.targetrc
+fi
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

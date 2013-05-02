@@ -164,6 +164,7 @@ Konsole Background Mode=Alt+P,Ctrl+Shift+F12,Toggle Background Window
 _k_friendly_name=Konsole
 
 [krunner]
+Lock Session=,Ctrl+Alt+L,Lock Session
 PowerDevil=none,none,Run Command (runner "PowerDevil" only)
 Run Command=Alt+F2,Alt+F2,Run Command
 Run Command on clipboard contents=Alt+Shift+F2,Alt+Shift+F2,Run Command on clipboard contents
