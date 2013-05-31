@@ -110,3 +110,6 @@ if [ -d $HOME/opt/ ];then
         export PATH=$HOME/bin/:$PATH
     fi
 fi
+
+bd() { echo `echo "$1" | base64 -d ` ; }
+

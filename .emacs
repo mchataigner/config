@@ -1,5 +1,7 @@
 (iswitchb-mode 1)
 
+(load-theme 'moot t)
+
 (add-to-list 'load-path "~/.emacs.d/")
 (require 'auto-complete-config)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
@@ -9,6 +11,8 @@
 (global-visual-line-mode 1)
 ;(global-whitespace-mode 1)
 ;(global-highlight-changes-mode 1)
+
+(setq make-backup-files nil)
 
 (xterm-mouse-mode 1)
 
@@ -36,3 +40,15 @@
 
 
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes (quote ("cc99d0e2f3ef0c87ccdd9bc7d1fe50d2ad8a9b532a8d87fc5e629d1843d3d166" default))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
