@@ -54,3 +54,5 @@
 	rebase = true
 [push]
 	default = simple
+[rerere]
+	enabled = 1
