@@ -44,6 +44,7 @@
 
 [core]
 	autocrlf = input
+	whitespace = trailing-space
 
 [github]
 	user = mchataigner
@@ -56,3 +57,5 @@
 	default = simple
 [rerere]
 	enabled = 1
+[apply]
+	whitespace = fix
