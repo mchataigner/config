@@ -39,6 +39,7 @@ switch-to-activity-09023b48-d313-484d-a093-1f1a8846ab59=none,none,Switch to acti
 switch-to-activity-18c45274-7f65-4d36-a7e0-49879f684aa0=none,none,Switch to activity "Desktop"
 switch-to-activity-54caf866-defb-40cb-bba0-0ba035d07472=none,none,Switch to activity "New Activity"
 switch-to-activity-6dded86c-c6e5-4eb0-8c5c-9effdf6c63c1=none,none,Switch to activity "Desktop"
+switch-to-activity-98f1f80c-7b8c-407c-833c-f403b7d6952b=none,none,Switch to activity "New Activity"
 switch-to-activity-af0ee5d6-5c7e-4b93-afc5-ebd85152d782=none,none,Switch to activity "New Activity"
 switch-to-activity-d3ed173d-52bd-4eae-9ee8-7327e758537e=none,none,Switch to activity "Desktop"
 
@@ -53,7 +54,7 @@ display=Display,Display,Switch Display
 
 [khotkeys]
 _k_friendly_name=khotkeys
-{0a463072-15e9-41ee-87b3-9dc6424be335}=,none,PrintScreen
+{5a0280e1-7f88-4f1c-b961-4f901cd28b92}=none,none,PrintScreen
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=Search,none,Search
 
 [klipper]
@@ -359,6 +360,7 @@ Next Activity=Meta+Tab,Meta+Tab,Next Activity
 Previous Activity=Meta+Shift+Tab,Meta+Shift+Tab,Previous Activity
 Show Dashboard=Ctrl+F12,Ctrl+F12,Show Dashboard
 Stop Activity=,Meta+S,Stop Current Activity
+SystemTray-Klipper-14=,Ctrl+Alt+V,
 SystemTray-Klipper-28=,Ctrl+Alt+V,
 SystemTray-Klipper-8=,Ctrl+Alt+V,
 Systemtray-Klipper-8=Ctrl+Alt+V,Ctrl+Alt+V,
@@ -368,7 +370,7 @@ activate widget 10=none,none,Activate Notifications Widget
 activate widget 16=none,none,Activate Network Management Widget
 activate widget 17=none,none,Activate Device Notifier Widget
 activate widget 18=none,none,Activate Notifications Widget
-activate widget 19=none,none,Activate Quick Display Configuration Widget
+activate widget 19=none,none,Activate Battery Monitor Widget
 activate widget 2=Wireless,Wireless,Activate Network Management Widget
 activate widget 20=none,none,Activate Instant Messaging Presence Widget
 activate widget 3=none,none,Activate Device Notifier Widget
