@@ -20,4 +20,5 @@ VirtualBox VMs
 sbt-launch.jar
 viadeo
 install.sh
+local
 
