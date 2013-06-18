@@ -114,3 +114,4 @@ fi
 
 bd() { echo `echo "$1" | base64 -d ` ; }
 
+source ~/.scripts/hadoop.sh
