@@ -35,10 +35,20 @@
 	      (scroll-down 5))
       (select-window current-window))))
 
- (global-set-key (kbd "<mouse-5>") 'sd-mousewheel-scroll-up)
- (global-set-key (kbd "<mouse-4>") 'sd-mousewheel-scroll-down)
+(global-set-key (kbd "<mouse-5>") 'sd-mousewheel-scroll-up)
+(global-set-key (kbd "<mouse-4>") 'sd-mousewheel-scroll-down)
 
+(add-to-list 'load-path "~/.emacs.d/ensime/elisp")
+(require 'ensime)
+(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
 
+(require 'package)
+(package-initialize)
+
+(add-to-list 'package-archives
+             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+
+(speedbar 1)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -51,4 +61,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(minimap-font-face ((t (:background "black" :height 1 :family "DejaVu Sans Mono")))))

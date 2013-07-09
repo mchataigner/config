@@ -115,6 +115,10 @@ if [ -d $HOME/local/bin/ ];then
     export PATH=$PATH:$HOME/local/bin/
 fi
 
+if [ -d $HOME/opt/adt-bundle/sdk/platform-tools ];then
+    export PATH=$PATH:$HOME/opt/adt-bundle/sdk/platform-tools
+fi
+
 bd() { echo `echo "$1" | base64 -d ` ; }
 
 source ~/.scripts/hadoop.sh
