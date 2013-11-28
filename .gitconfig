@@ -52,7 +52,7 @@
 [branch]
 	autosetupmerge = false
 [pull]
-	rebase = true
+	rebase = false
 [push]
 	default = simple
 [rerere]

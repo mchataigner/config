@@ -2,10 +2,10 @@
 c:172
 
 "/usr/bin/mpc next"
-c:173
+c:171
 
 "/usr/bin/mpc prev"
-c:171
+c:173
 
 "/usr/bin/mpc stop"
 c:164
