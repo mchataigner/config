@@ -15,6 +15,10 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
+if [ -f /usr/share/autojump/autojump.sh ];then
+  . /usr/share/autojump/autojump.sh
+fi
+
 alias sshk="ssh killdozer"
 alias ssht="ssh thinkpad"
 
