@@ -14,3 +14,7 @@ fi
 
 xclip -sel clip < ~/.ssh/id_rsa.pub
 
+
+echo "copy to github"
+
+read toto
