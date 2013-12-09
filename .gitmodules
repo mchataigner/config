@@ -10,6 +10,4 @@
 [submodule "opt/ag"]
 	path = opt/ag
 	url = https://github.com/ggreer/the_silver_searcher.git
-[submodule ".oh-my-zsh"]
-	path = .oh-my-zsh
-	url = https://github.com/mchataigner/oh-my-zsh.git
+
