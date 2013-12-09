@@ -38,6 +38,7 @@ source $ZSH/oh-my-zsh.sh
 
 source $HOME/.commonrc
 source $HOME/.bash_aliases
+source $HOME/.bash_profile
 
 setopt GLOB_COMPLETE
 
