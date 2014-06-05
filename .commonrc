@@ -15,7 +15,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias gs='git s'
-alias sbt='sbt -mem 2000'
+alias sbt='sbt -mem 4000'
 
 #alias j="autojump"
 if [ -f /usr/share/autojump/autojump.sh ]; then
@@ -88,7 +88,7 @@ fi
 
 if [ -d $HOME/.rvm ];then
     export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-    source $HOME/.rvm/scripts/rvm
+    #source $HOME/.rvm/scripts/rvm
 fi
 
 #synclient TapButton3=3 TapButton2=2
@@ -133,3 +133,11 @@ fi
 bd() { echo `echo "$1" | base64 -d ` ; }
 
 source ~/.scripts/hadoop.sh
+export GOROOT=/home/mchataig/usr/go
+export GOPATH=/home/mchataig/usr/golibs
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+if [ -f /etc/host.aliases ];then
+    export HOSTALIASES=/etc/host.aliases
+fi
+
